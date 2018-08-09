@@ -1,0 +1,134 @@
+body {
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------
+   SIDEBAR TEXT 
+-------------------------------------------------- */
+
+.sidebar-test ol ol {
+  margin-right: 1cm;
+  background: #EAF7C5;
+}
+
+.sidebar-test ol ol li p {
+  margin-right: -1cm;
+}
+
+.sidebar-test ol dfn {
+  float: outside; 
+  margin-outside: -4cm;
+  margin-top: 0.06cm;
+  width: 3.5cm;
+  font-size: 8.5pt;
+  background: #4AFF46;
+  padding: 1px 3px;
+}
+
+.sidebar-test ol ol dfn {
+  margin-outside: -5cm;
+}
+
+.sidebar-test ol ol ol dfn {
+  margin-outside: -6cm;
+}
+
+.sidebar-test ol ol ol ol dfn {
+  margin-outside: -7cm;
+}
+
+.sidebar-test ol ol ol ol ol dfn {
+  margin-outside: -8cm;
+}
+
+.sidebar-test ol ol ol ol ol ol dfn {
+  margin-outside: -9cm;
+}
+
+/* --------------------------------------------------
+   PAGE SETUP 
+-------------------------------------------------- */
+
+@page:left {
+  padding-left: 4cm;
+}
+
+@page:right {
+  padding-right: 4cm;
+}
+
+/* --------------------------------------------------
+   LISTS 
+-------------------------------------------------- */
+
+ol, ol ol.no-numbering {
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 1cm;
+}
+
+ol.no-numbering,
+ol.sec-list {
+  padding-left: 0;
+}
+
+ol ol li p {
+  margin-bottom: 0;
+}
+
+ol ol {
+  margin-bottom: 6pt;
+}
+
+.no-numbering,
+.sec-list,
+.lower-alpha,
+.upper-alpha,
+.lower-roman,
+.upper-roman,
+.decimal {
+  list-style-type: none;
+}
+
+ol > li {
+  clear: none;
+  position: relative;
+  margin-bottom: 0;
+}
+
+ol.lower-alpha > li span,
+ol.upper-alpha > li span,
+ol.lower-roman > li span,
+ol.upper-roman > li span,
+ol.decimal > li span {
+  position: absolute;
+  left: -1cm;
+  top: 0;
+  display: block;
+  width: 1cm;
+  font-weight: normal;
+}
+
+ol.lower-alpha > li p,
+ol.upper-alpha > li p,
+ol.lower-roman > li p,
+ol.upper-roman > li p,
+ol.decimal > li p {
+  clear: none;
+  top: 0;
+}
+
+ol.sec-list > li p {
+  clear: none;
+  width: 100%;
+}
+
+ol.sec-list > li p span {
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* Reset the width on child lists */
+ol.sec-list ol p {
+  display: block;
+}
