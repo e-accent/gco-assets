@@ -1,12 +1,18 @@
 /* --------------------------------------------------
-   GENERAL STYLES 
+  GENERAL STYLES
 -------------------------------------------------- */
 
 body {
   line-height: 1.5;
   box-sizing: border-box;
-  font-family: 'Merriweather', serif;
   font-variant-ligatures: common-ligatures;
+}
+
+body,
+td,
+th {
+  font-family: Merriweather, serif;
+  color: #000000;
 }
 
 section {
@@ -21,7 +27,12 @@ article {
   clear: both;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both;
   padding: 0;
   margin: 0;
@@ -30,7 +41,9 @@ h1, h2, h3, h4, h5, h6 {
   page-break-inside: avoid;
 }
 
-h1+p, h2+p, h3+p {
+h1+p,
+h2+p,
+h3+p {
   page-break-before: avoid;
 }
 
@@ -50,11 +63,14 @@ h3 {
   padding-bottom: 6pt;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font-size: 10pt;
 }
 
-p, li {
+p,
+li {
   font-size: 9pt;
 }
 
@@ -67,9 +83,18 @@ article p {
 }
 
 table {
+  table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
   font-size: 7.5pt;
+}
+
+.col-number {
+  width: 10%;
+}
+
+.col-article {
+  width: 45%;
 }
 
 table tr {
@@ -85,8 +110,12 @@ table td {
   vertical-align: top;
 }
 
+table th {
+  text-align: left;
+}
+
 section.title,
-section.intro,  
+section.intro,
 section.copyright {
   text-align: center;
 }
@@ -99,7 +128,7 @@ section.copyright {
   padding-top: 1.5in;
 }
 
-.intro h3, 
+.intro h3,
 .intro h4 {
   font-weight: normal;
 }
@@ -125,27 +154,40 @@ a {
 }
 
 /* --------------------------------------------------
-   PDF TABLE OF CONTENTS 
+  UTILITIES
 -------------------------------------------------- */
 
-section.intro h1, section.intro h2, section.intro h3, section.intro h4 {
+.page-break-before {
+  page-break-before: always;
+}
+
+/* --------------------------------------------------
+  PDF TABLE OF CONTENTS
+-------------------------------------------------- */
+
+section.intro h1,
+section.intro h2,
+section.intro h3,
+section.intro h4 {
   prince-bookmark-level: none;
 }
 
-section.copyright h3, section.copyright h4 {
+section.copyright h3,
+section.copyright h4 {
   prince-bookmark-level: none;
 }
 
-section.contents h2, section.contents h3, section.contents h4 {
+section.contents h2,
+section.contents h3,
+section.contents h4 {
   prince-bookmark-level: none;
 }
 
 section.index article header {
   prince-bookmark-level: 2;
 }
-
 /* --------------------------------------------------
-   PAGE DEFINITIONS 
+  PAGE DEFINITIONS
 -------------------------------------------------- */
 
 section.title,
@@ -180,24 +222,30 @@ section.index {
 }
 
 /* --------------------------------------------------
-   LISTS 
+  LISTS
 -------------------------------------------------- */
 
-ol { 
-  margin-left: 2rem; 
+ol {
+  margin-left: 1.5rem;
   margin-top: 0;
 }
 
 ol ol {
   margin-bottom: 6pt;
+  padding-left: 1rem;
 }
 
-ol li { 
-  padding-left: 0; 
+ol li {
+  padding-left: 0;
+  margin-bottom: 4pt;
 }
 
 ol ol li p {
-  margin-bottom: 0;
+  margin-bottom: 3pt;
+}
+
+.contents ol li {
+  margin-bottom: 3pt;
 }
 
 .no-numbering,
@@ -231,11 +279,11 @@ ol.upper-roman {
   list-style-type: upper-roman;
 }
 
-ol.lower-alpha > li span.number,
-ol.upper-alpha > li span.number,
-ol.lower-roman > li span.number,
-ol.upper-roman > li span.number,
-ol.decimal > li span.number {
+ol.lower-alpha>li span.number,
+ol.upper-alpha>li span.number,
+ol.lower-roman>li span.number,
+ol.upper-roman>li span.number,
+ol.decimal>li span.number {
   position: absolute;
   left: -1cm;
   top: 0;
@@ -244,19 +292,19 @@ ol.decimal > li span.number {
   font-weight: normal;
 }
 
-ol.sec-list > li p span.number {
+ol.sec-list>li p span.number {
   display: inline-block;
   font-weight: bold;
 }
 
 /* --------------------------------------------------
-   SIDEBAR TEXT 
+  SIDEBAR TEXT
 -------------------------------------------------- */
 
 .constitution ol dfn,
 .canons ol dfn,
 .rules_of_order ol dfn {
-  position: absolute; 
+  position: absolute;
   right: -1in;
   margin-top: 0.06cm;
   width: 0.85in;
@@ -264,11 +312,11 @@ ol.sec-list > li p span.number {
 }
 
 /* --------------------------------------------------
-   INDEX 
+  INDEX
 -------------------------------------------------- */
 
 .index header {
-  font-size: 30pt;
+  font-size: 16pt;
   text-align: center;
   page-break-after: avoid;
 }
@@ -289,7 +337,7 @@ ol.sec-list > li p span.number {
   font-weight: normal;
 }
 
-.index > ul {
+.index>ul {
   padding-left: 0;
 }
 
@@ -297,8 +345,9 @@ ol.sec-list > li p span.number {
   margin: 0;
   padding: 1pt 0;
   width: 100%;
+  clear: both;
   display: block;
-  font-size: 7.5pt;
+  font-size: 8pt;
   line-height: 1.2;
 }
 
@@ -317,18 +366,11 @@ ol.sec-list > li p span.number {
 }
 
 /* --------------------------------------------------
-   HEADERS 
+  HEADERS & TRANSLATIONS
 -------------------------------------------------- */
 
-/* Translations */
-
 body {
-  string-set: tr_gc "The General Convention",
-  tr_constitution "Constitution",
-  tr_contents "Contents",
-  tr_canon "Canon",
-  tr_rules "Rules of Order",
-  tr_index "Index";
+  string-set: tr_gc "The General Convention", tr_constitution "Constitution", tr_contents "Contents", tr_canon "Canon", tr_rules "Rules of Order", tr_index "Index";
 }
 
 section.constitution h2 {
@@ -348,7 +390,7 @@ section.rules_of_order h2 {
 }
 
 /* --------------------------------------------------
-   PRINT SETUP 
+  PRINT SETUP
 -------------------------------------------------- */
 
 body {
@@ -364,7 +406,7 @@ body {
 }
 
 @page:right {
-  @top-left { 
+  @top-left {
     text-transform: uppercase;
     font-size: 9pt;
     font-weight: bold;
@@ -372,7 +414,7 @@ body {
     vertical-align: bottom;
     padding-bottom: 0.3cm;
   }
-  @top-right { 
+  @top-right {
     text-transform: uppercase;
     font-size: 9pt;
     font-weight: bold;
@@ -394,7 +436,7 @@ body {
 }
 
 @page:left {
-  @top-left { 
+  @top-left {
     text-transform: uppercase;
     font-size: 9pt;
     font-weight: bold;
@@ -402,7 +444,7 @@ body {
     vertical-align: bottom;
     padding-bottom: 0.3cm;
   }
-  @top-right { 
+  @top-right {
     text-transform: uppercase;
     font-size: 9pt;
     font-weight: bold;
@@ -428,7 +470,7 @@ body {
 }
 
 @page contents:left {
-  @top-left { 
+  @top-left {
     content: string(tr_contents);
   }
   @bottom-left {
@@ -437,7 +479,7 @@ body {
 }
 
 @page contents:right {
-  @top-right { 
+  @top-right {
     content: string(tr_contents);
   }
   @bottom-right {
@@ -447,107 +489,104 @@ body {
 
 @page constitution:left {
   padding-right: 1in;
-  @top-left { 
+  @top-left {
     content: string(headertextconstitution);
   }
-  @top-right { 
+  @top-right {
     content: string(tr_gc);
   }
 }
 
 @page constitution:right {
   padding-right: 1in;
-  @top-left { 
+  @top-left {
     content: string(tr_constitution);
   }
-  @top-right { 
+  @top-right {
     content: string(headertextconstitution);
   }
 }
 
 @page canons:left {
   padding-right: 1in;
-  @top-left { 
+  @top-left {
     content: string(tr_canon) " " string(headertextcanonnumber);
   }
-  @top-right { 
+  @top-right {
     content: string(headertextcanontitle);
   }
 }
 
 @page canons:right {
   padding-right: 1in;
-  @top-left { 
+  @top-left {
     content: string(tr_canon) " " string(headertextcanonnumber);
   }
-  @top-right { 
+  @top-right {
     content: string(headertextcanontitle);
   }
 }
 
 @page rules_of_order:left {
   padding-right: 1in;
-  @top-left { 
+  @top-left {
     content: string(tr_rules);
   }
 }
 
 @page rules_of_order:right {
   padding-right: 1in;
-  @top-right { 
+  @top-right {
     content: string(headertextrulessection);
   }
 }
 
 @page resolutions-amending:left {
-  @top-left { 
+  @top-left {
     content: string(tr_index);
   }
 }
 
 @page resolutions-amending:right {
-  @top-right { 
+  @top-right {
     content: string(tr_index);
   }
 }
 
 @page index:left {
-  @top-left { 
+  @top-left {
     content: string(tr_index);
   }
 }
 
 @page index:right {
-  @top-right { 
+  @top-right {
     content: string(tr_index);
   }
 }
 
 /* --------------------------------------------------
-   SCREEN ONLY STYLES 
+  SCREEN ONLY STYLES
 -------------------------------------------------- */
 
 @media screen {
   dfn {
     background-color: gold
   }
-
   ol.sec-list .number {
     background-color: greenyellow;
   }
-
   dfn {
     float: right;
     margin-left: 20px;
     padding: 5px;
   }
-
   body {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 1rem;
+    background-color: #FFFFFF;
   }
-
   section {
     margin: 1.5rem 0 !important;
     padding: 3rem !important;
@@ -556,23 +595,19 @@ body {
     display: block;
     clear: both;
   }
-
   .constitution,
   .canons,
   .rules-of-order {
     padding-right: 13rem !important;
   }
-
-  .title, 
+  .title,
   .intro,
   .copyright {
     padding-top: 0;
   }
-
   a {
     color: darkblue;
   }
-
   a:hover {
     color: blue;
     text-decoration: underline;
