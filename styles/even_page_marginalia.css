@@ -1,40 +1,37 @@
-
 /* Override styles from application.css for marginalia so they work on even pages */
 
 .constitution ol dfn,
 .canons ol dfn,
 .rules_of_order ol dfn {
-    left: -1in;
+  left: -1in;
 }
 
 @page constitution:left {
-    padding-left: 1in;
-    padding-right: 0;
+  padding-left: 1in;
+  padding-right: 0;
 }
 
 @page constitution:right {
-    padding-left: 0in;
-    padding-right: 1in;
+  padding-left: 0in;
+  padding-right: 1in;
 }
 
-
 @page canons:left {
-    padding-left: 1in;
-    padding-right: 0;
+  padding-left: 1in;
+  padding-right: 0;
 }
 
 @page canons:right {
-    padding-left: 0in;
-    padding-right: 1in;
+  padding-left: 0in;
+  padding-right: 1in;
 }
 
-
 @page rules_of_order:left {
-    padding-left: 1in;
-    padding-right: 0;
+  padding-left: 1in;
+  padding-right: 0;
 }
 
 @page rules_of_order:right {
-    padding-left: 0in;
-    padding-right: 1in;
+  padding-left: 0in;
+  padding-right: 1in;
 }
