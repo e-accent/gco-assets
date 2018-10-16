@@ -298,44 +298,6 @@ ol.sec-list>li p span.number {
 }
 
 /* --------------------------------------------------
-  LISTS WITH PARENTHESES AS SEPARATOR
--------------------------------------------------- */
-
-ol.parentheses {
-  counter-reset: item;
-  margin-left: 0;
-}
-
-ol.parentheses > li {
-  counter-increment: item; 
-  list-style: none;
-}
-
-ol.parentheses > li:before {
-  content: counter(item, decimal) ") "; 
-}
-
-ol.decimal.parentheses > li:before {
-  content: counter(item, decimal) ") ";
-}
-
-ol.lower-alpha.parentheses > li:before {
-  content: counter(item, lower-alpha) ") ";
-}
-
-ol.lower-roman.parentheses > li:before {
-  content: counter(item, lower-roman) ") ";
-}
-
-ol.upper-alpha.parentheses > li:before {
-  content: counter(item, upper-alpha) ") ";
-}
-
-ol.upper-roman.parentheses > li:before {
-  content: counter(item, upper-roman) ") ";
-}
-
-/* --------------------------------------------------
   SIDEBAR TEXT
 -------------------------------------------------- */
 
