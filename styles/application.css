@@ -304,15 +304,20 @@ ol.sec-list>li p span.number {
 ol.parentheses {
   counter-reset: item;
   margin-left: 0;
+  display: table;
 }
 
 ol.parentheses > li {
   counter-increment: item; 
   list-style: none;
+  display: table-row;
 }
 
 ol.parentheses > li:before {
   content: counter(item, decimal) ") "; 
+  display: table-cell;
+  padding-right: 0.5rem;
+  text-align: right;
 }
 
 ol.decimal.parentheses > li:before {
