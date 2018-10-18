@@ -314,30 +314,30 @@ ol.parentheses > li {
 }
 
 ol.parentheses > li:before {
-  content: counter(item, decimal) ") "; 
+  content: "(" counter(item, decimal) ") "; 
   display: table-cell;
   padding-right: 0.5rem;
   text-align: right;
 }
 
 ol.decimal.parentheses > li:before {
-  content: counter(item, decimal) ") ";
+  content: "(" counter(item, decimal) ") ";
 }
 
 ol.lower-alpha.parentheses > li:before {
-  content: counter(item, lower-alpha) ") ";
+  content: "(" counter(item, lower-alpha) ") ";
 }
 
 ol.lower-roman.parentheses > li:before {
-  content: counter(item, lower-roman) ") ";
+  content: "(" counter(item, lower-roman) ") ";
 }
 
 ol.upper-alpha.parentheses > li:before {
-  content: counter(item, upper-alpha) ") ";
+  content: "(" counter(item, upper-alpha) ") ";
 }
 
 ol.upper-roman.parentheses > li:before {
-  content: counter(item, upper-roman) ") ";
+  content: "(" counter(item, upper-roman) ") ";
 }
 
 /* --------------------------------------------------
