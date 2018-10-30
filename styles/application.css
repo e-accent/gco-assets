@@ -613,16 +613,12 @@ body {
 -------------------------------------------------- */
 
 @media screen {
-  dfn {
-    background-color: gold
-  }
-  ol.sec-list .number {
-    background-color: greenyellow;
-  }
-  dfn {
-    float: right;
-    margin-left: 20px;
-    padding: 5px;
+  .constitution ol dfn,
+  .canons ol dfn,
+  .rules_of_order ol dfn {
+    position: absolute;
+    right: 1.4cm;
+    width: 1.3in;
   }
   body {
     max-width: 1000px;
