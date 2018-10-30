@@ -72,14 +72,11 @@ h6 {
 p,
 li {
   font-size: 9pt;
+  margin-bottom: 12pt;
 }
 
 small {
   font-size: 8pt;
-}
-
-article p {
-  margin: 0 0 6pt 0;
 }
 
 table {
@@ -236,10 +233,6 @@ ol ol {
 
 li {
   padding-left: 0;
-}
-
-p, li {
-  margin-bottom: 12pt;
 }
 
 .contents ol li {
