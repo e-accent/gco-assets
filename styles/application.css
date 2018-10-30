@@ -186,6 +186,7 @@ section.contents h4 {
 section.index article header {
   prince-bookmark-level: 2;
 }
+
 /* --------------------------------------------------
   PAGE DEFINITIONS
 -------------------------------------------------- */
@@ -213,7 +214,7 @@ section.rules_of_order {
   page: rules_of_order;
 }
 
-section.resolutions-amending {
+section.resolution_index {
   page: resolutions-amending;
 }
 
@@ -413,7 +414,7 @@ ol.upper-roman.parentheses > li:before {
 -------------------------------------------------- */
 
 body {
-  string-set: tr_gc "The General Convention", tr_constitution "Constitution", tr_contents "Contents", tr_canon "Canon", tr_rules "Rules of Order", tr_index "Index";
+  string-set: tr_gc "The General Convention", tr_constitution "Constitution", tr_contents "Contents", tr_canon "Canon", tr_canons "Canons", tr_rules "Rules of Order", tr_index "Index", tr_resolutions_amending "Resolutions Amending the Constitution, Canons, and Rules of Order";
 }
 
 section.constitution h2 {
@@ -424,12 +425,16 @@ section.canons h2 {
   string-set: headertextcanontitle content();
 }
 
+section.canons h3 {
+  string-set: headertextcanonrange content();
+}
+
 section.canons li[data-section] {
   string-set: headertextcanonnumber attr(data-section);
 }
 
 section.rules_of_order h2 {
-  string-set: headertextrulessection content();
+  string-set: headertextrulessubsection content();
 }
 
 /* --------------------------------------------------
@@ -466,11 +471,15 @@ body {
     padding-bottom: 0.3cm;
   }
   @bottom-left {
+    text-transform: uppercase;
+    font-size: 9pt;
     border-top: #7F7F7F solid thin;
     vertical-align: top;
     padding-top: 0.3cm;
   }
   @bottom-right {
+    text-transform: uppercase;
+    font-size: 9pt;
     content: counter(page);
     border-top: #7F7F7F solid thin;
     vertical-align: top;
@@ -496,12 +505,16 @@ body {
     padding-bottom: 0.3cm;
   }
   @bottom-left {
+    text-transform: uppercase;
+    font-size: 9pt;
     content: counter(page);
     border-top: #7F7F7F solid thin;
     vertical-align: top;
     padding-top: 0.3cm;
   }
   @bottom-right {
+    text-transform: uppercase;
+    font-size: 9pt;
     border-top: #7F7F7F solid thin;
     vertical-align: top;
     padding-top: 0.3cm;
@@ -513,7 +526,7 @@ body {
 }
 
 @page contents:left {
-  @top-left {
+  @bottom-right {
     content: string(tr_contents);
   }
   @bottom-left {
@@ -522,7 +535,7 @@ body {
 }
 
 @page contents:right {
-  @top-right {
+  @bottom-left {
     content: string(tr_contents);
   }
   @bottom-right {
@@ -532,17 +545,17 @@ body {
 
 @page constitution:left {
   padding-right: 1in;
+  @bottom-right {
+    content: string(tr_constitution);
+  }
   @top-left {
     content: string(headertextconstitution);
-  }
-  @top-right {
-    content: string(tr_gc);
   }
 }
 
 @page constitution:right {
   padding-right: 1in;
-  @top-left {
+  @bottom-left {
     content: string(tr_constitution);
   }
   @top-right {
@@ -552,58 +565,76 @@ body {
 
 @page canons:left {
   padding-right: 1in;
-  @top-left {
-    content: string(tr_canon) " " string(headertextcanonnumber);
+  @bottom-right {
+    content: string(tr_canons);
   }
   @top-right {
     content: string(headertextcanontitle);
+  }
+  @top-left {
+    content: string(tr_canon) " " string(headertextcanonrange);
   }
 }
 
 @page canons:right {
   padding-right: 1in;
+  @bottom-left {
+    content: string(tr_canons);
+  }
   @top-left {
-    content: string(tr_canon) " " string(headertextcanonnumber);
+    content: string(headertextcanontitle);
   }
   @top-right {
-    content: string(headertextcanontitle);
+    content: string(tr_canon) " " string(headertextcanonrange);
   }
 }
 
 @page rules_of_order:left {
   padding-right: 1in;
-  @top-left {
+  @bottom-right {
     content: string(tr_rules);
+  }
+  @top-right {
+    content: string(headertextrulessubsection);
   }
 }
 
 @page rules_of_order:right {
   padding-right: 1in;
-  @top-right {
-    content: string(headertextrulessection);
+  @bottom-left {
+    content: string(tr_rules);
+  }
+  @top-left {
+    content: string(headertextrulessubsection);
   }
 }
 
 @page resolutions-amending:left {
   @top-left {
+    content: string(tr_resolutions_amending);
+  }
+  @bottom-right {
     content: string(tr_index);
   }
 }
 
 @page resolutions-amending:right {
   @top-right {
+    content: string(tr_resolutions_amending);
+  }
+  @bottom-left {
     content: string(tr_index);
   }
 }
 
 @page index:left {
-  @top-left {
+  @bottom-right {
     content: string(tr_index);
   }
 }
 
 @page index:right {
-  @top-right {
+  @bottom-left {
     content: string(tr_index);
   }
 }
