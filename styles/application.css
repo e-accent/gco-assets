@@ -72,14 +72,14 @@ h6 {
 p,
 li {
   font-size: 9pt;
+  margin-bottom: 8pt;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 small {
   font-size: 8pt;
-}
-
-article p {
-  margin: 0 0 6pt 0;
 }
 
 table {
@@ -229,20 +229,17 @@ section.index {
 ol {
   margin-left: 1.5rem;
   margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 ol ol {
-  margin-bottom: 6pt;
   padding-left: 1rem;
 }
 
-ol li {
+li {
   padding-left: 0;
-  margin-bottom: 4pt;
-}
-
-ol ol li p {
-  margin-bottom: 3pt;
 }
 
 .contents ol li {
@@ -306,12 +303,14 @@ ol.parentheses {
   counter-reset: item;
   margin-left: 0;
   display: table;
+  border-collapse: collapse;
 }
 
 ol.parentheses > li {
   counter-increment: item; 
   list-style: none;
   display: table-row;
+  border-bottom: 8pt solid transparent;
 }
 
 ol.parentheses > li:before {
@@ -644,16 +643,12 @@ body {
 -------------------------------------------------- */
 
 @media screen {
-  dfn {
-    background-color: gold
-  }
-  ol.sec-list .number {
-    background-color: greenyellow;
-  }
-  dfn {
-    float: right;
-    margin-left: 20px;
-    padding: 5px;
+  .constitution ol dfn,
+  .canons ol dfn,
+  .rules_of_order ol dfn {
+    position: absolute;
+    right: 1.4cm;
+    width: 1.3in;
   }
   body {
     max-width: 1000px;
