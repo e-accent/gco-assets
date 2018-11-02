@@ -603,7 +603,7 @@ body {
     content: string(headertextrulessubsection);
   }
   @top-left {
-    content: string(tr_section) " " string(headertextrulesrange);
+    content: string(tr_section) " " string(headertextrulesrange, start);
   }
 }
 
@@ -616,7 +616,7 @@ body {
     content: string(headertextrulessubsection);
   }
   @top-right {
-    content: string(tr_section) " " string(headertextrulesrange);
+    content: string(tr_section) " " string(headertextrulesrange, start);
   }
 }
 
