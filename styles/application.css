@@ -571,7 +571,7 @@ body {
     content: string(headertextcanontitle);
   }
   @top-left {
-    content: string(tr_canon) " " string(headertextcanonrange);
+    content: string(tr_canons) string(headertextcanonnumber, start) "-" string(headertextcanonnumber, last);
   }
 }
 
@@ -584,7 +584,7 @@ body {
     content: string(headertextcanontitle);
   }
   @top-right {
-    content: string(tr_canon) " " string(headertextcanonrange);
+    content: string(tr_canons) string(headertextcanonnumber, start) "-" string(headertextcanonnumber, last);
   }
 }
 
