@@ -432,8 +432,8 @@ section.canons li[data-section] {
   string-set: headertextcanonnumber attr(data-section);
 }
 
-section.rules_of_order h2 {
-  string-set: headertextrulessubsection content();
+section.rules_of_order h2[title] {
+  string-set: headertextrulessubsection attr(title);
 }
 
 section.rules_of_order h3[data-section] {
