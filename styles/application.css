@@ -413,7 +413,7 @@ ol.upper-roman.parentheses > li:before {
 -------------------------------------------------- */
 
 body {
-  string-set: tr_gc "The General Convention", tr_constitution "Constitution", tr_contents "Contents", tr_canon "Canon", tr_canons "Canons", tr_rules "Rules of Order", tr_index "Index", tr_resolutions_amending "Resolutions Amending the Constitution, Canons, and Rules of Order";
+  string-set: tr_gc "The General Convention", tr_constitution "Constitution", tr_contents "Contents", tr_canon "Canon", tr_canons "Canons", tr_rules "Rules of Order", tr_section "Section", tr_index "Index", tr_resolutions_amending "Resolutions Amending the Constitution, Canons, and Rules of Order";
 }
 
 section.constitution h2 {
@@ -434,6 +434,10 @@ section.canons li[data-section] {
 
 section.rules_of_order h2 {
   string-set: headertextrulessubsection content();
+}
+
+section.rules_of_order h3[data-section] {
+  string-set: headertextrulesrange attr(data-section);
 }
 
 /* --------------------------------------------------
@@ -573,7 +577,7 @@ body {
     content: string(headertextcanontitle);
   }
   @top-left {
-    content: string(tr_canons) string(headertextcanonnumber, start) "-" string(headertextcanonnumber, last);
+    content: string(tr_canons) " " string(headertextcanonnumber, start) "-" string(headertextcanonnumber, last);
   }
 }
 
@@ -586,7 +590,7 @@ body {
     content: string(headertextcanontitle);
   }
   @top-right {
-    content: string(tr_canons) string(headertextcanonnumber, start) "-" string(headertextcanonnumber, last);
+    content: string(tr_canons) " " string(headertextcanonnumber, start) "-" string(headertextcanonnumber, last);
   }
 }
 
@@ -598,6 +602,9 @@ body {
   @top-right {
     content: string(headertextrulessubsection);
   }
+  @top-left {
+    content: string(tr_section) " " string(headertextrulesrange);
+  }
 }
 
 @page rules_of_order:right {
@@ -607,6 +614,9 @@ body {
   }
   @top-left {
     content: string(headertextrulessubsection);
+  }
+  @top-right {
+    content: string(tr_section) " " string(headertextrulesrange);
   }
 }
 
