@@ -472,6 +472,7 @@ body {
   @bottom-left {
     text-transform: uppercase;
     font-size: 9pt;
+    font-weight: bold;
     border-top: #7F7F7F solid thin;
     vertical-align: top;
     padding-top: 0.3cm;
@@ -514,6 +515,7 @@ body {
   @bottom-right {
     text-transform: uppercase;
     font-size: 9pt;
+    font-weight: bold;
     border-top: #7F7F7F solid thin;
     vertical-align: top;
     padding-top: 0.3cm;
