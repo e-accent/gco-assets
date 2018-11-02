@@ -60,7 +60,12 @@ h2 {
 
 h3 {
   font-size: 11pt;
+  padding-top: 12pt;
   padding-bottom: 6pt;
+}
+
+h4 {
+  padding-top: 6pt;
 }
 
 h4,
