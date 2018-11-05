@@ -425,8 +425,8 @@ section.constitution h2[title] {
   string-set: headertextconstitution attr(title);
 }
 
-section.canons h2 {
-  string-set: headertextcanontitle content();
+section.canons h2[title] {
+  string-set: headertextcanontitle attr(title);
 }
 
 section.canons h3 {
