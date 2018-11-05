@@ -421,8 +421,8 @@ body {
   string-set: tr_gc "The General Convention", tr_constitution "Constitution", tr_contents "Contents", tr_canon "Canon", tr_canons "Canons", tr_rules "Rules of Order", tr_section "Section", tr_index "Index", tr_resolutions_amending "Resolutions Amending the Constitution, Canons, and Rules of Order";
 }
 
-section.constitution h2 {
-  string-set: headertextconstitution content();
+section.constitution h2[title] {
+  string-set: headertextconstitution attr(title);
 }
 
 section.canons h2 {
@@ -559,7 +559,7 @@ body {
     content: string(tr_constitution);
   }
   @top-left {
-    content: string(headertextconstitution);
+    content: string(headertextconstitution, first);
   }
 }
 
@@ -569,7 +569,7 @@ body {
     content: string(tr_constitution);
   }
   @top-right {
-    content: string(headertextconstitution);
+    content: string(headertextconstitution, first);
   }
 }
 
@@ -582,7 +582,7 @@ body {
     content: string(headertextcanontitle);
   }
   @top-left {
-    content: string(tr_canons) " " string(headertextcanonnumber, start) "-" string(headertextcanonnumber, last);
+    content: string(tr_canon) " " string(headertextcanonnumber, first);
   }
 }
 
@@ -595,7 +595,7 @@ body {
     content: string(headertextcanontitle);
   }
   @top-right {
-    content: string(tr_canons) " " string(headertextcanonnumber, start) "-" string(headertextcanonnumber, last);
+    content: string(tr_canon) " " string(headertextcanonnumber, first);
   }
 }
 
@@ -608,7 +608,7 @@ body {
     content: string(headertextrulessubsection);
   }
   @top-left {
-    content: string(tr_section) " " string(headertextrulesrange, start);
+    content: string(tr_section) " " string(headertextrulesrange, first);
   }
 }
 
@@ -621,7 +621,7 @@ body {
     content: string(headertextrulessubsection);
   }
   @top-right {
-    content: string(tr_section) " " string(headertextrulesrange, start);
+    content: string(tr_section) " " string(headertextrulesrange, first);
   }
 }
 
