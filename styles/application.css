@@ -559,7 +559,7 @@ body {
     content: string(tr_constitution);
   }
   @top-left {
-    content: string(headertextconstitution, first);
+    content: string(headertextconstitution, start);
   }
 }
 
@@ -569,7 +569,7 @@ body {
     content: string(tr_constitution);
   }
   @top-right {
-    content: string(headertextconstitution, first);
+    content: string(headertextconstitution, start);
   }
 }
 
@@ -582,7 +582,7 @@ body {
     content: string(headertextcanontitle);
   }
   @top-left {
-    content: string(tr_canon) " " string(headertextcanonnumber, first);
+    content: string(tr_canon) " " string(headertextcanonnumber, start);
   }
 }
 
@@ -595,7 +595,7 @@ body {
     content: string(headertextcanontitle);
   }
   @top-right {
-    content: string(tr_canon) " " string(headertextcanonnumber, first);
+    content: string(tr_canon) " " string(headertextcanonnumber, start);
   }
 }
 
@@ -608,7 +608,7 @@ body {
     content: string(headertextrulessubsection);
   }
   @top-left {
-    content: string(tr_section) " " string(headertextrulesrange, first);
+    content: string(tr_section) " " string(headertextrulesrange, start);
   }
 }
 
@@ -621,7 +621,7 @@ body {
     content: string(headertextrulessubsection);
   }
   @top-right {
-    content: string(tr_section) " " string(headertextrulesrange, first);
+    content: string(tr_section) " " string(headertextrulesrange, start);
   }
 }
 
