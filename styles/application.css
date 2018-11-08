@@ -60,7 +60,12 @@ h2 {
 
 h3 {
   font-size: 11pt;
+  padding-top: 12pt;
   padding-bottom: 6pt;
+}
+
+h4 {
+  padding-top: 6pt;
 }
 
 h4,
@@ -413,15 +418,15 @@ ol.upper-roman.parentheses > li:before {
 -------------------------------------------------- */
 
 body {
-  string-set: tr_gc "The General Convention", tr_constitution "Constitution", tr_contents "Contents", tr_canon "Canon", tr_canons "Canons", tr_rules "Rules of Order", tr_index "Index", tr_resolutions_amending "Resolutions Amending the Constitution, Canons, and Rules of Order";
+  string-set: tr_gc "The General Convention", tr_constitution "Constitution", tr_contents "Contents", tr_canon "Canon", tr_canons "Canons", tr_rules "Rules of Order", tr_section "Section", tr_index "Index", tr_resolutions_amending "Resolutions Amending the Constitution, Canons, and Rules of Order";
 }
 
-section.constitution h2 {
-  string-set: headertextconstitution content();
+section.constitution h2[title] {
+  string-set: headertextconstitution attr(title);
 }
 
-section.canons h2 {
-  string-set: headertextcanontitle content();
+section.canons h2[title] {
+  string-set: headertextcanontitle attr(title);
 }
 
 section.canons h3 {
@@ -432,8 +437,12 @@ section.canons li[data-section] {
   string-set: headertextcanonnumber attr(data-section);
 }
 
-section.rules_of_order h2 {
-  string-set: headertextrulessubsection content();
+section.rules_of_order h2[title] {
+  string-set: headertextrulessubsection attr(title);
+}
+
+section.rules_of_order h3[data-section] {
+  string-set: headertextrulesrange attr(data-section);
 }
 
 /* --------------------------------------------------
@@ -472,6 +481,7 @@ body {
   @bottom-left {
     text-transform: uppercase;
     font-size: 9pt;
+    font-weight: bold;
     border-top: #7F7F7F solid thin;
     vertical-align: top;
     padding-top: 0.3cm;
@@ -514,6 +524,7 @@ body {
   @bottom-right {
     text-transform: uppercase;
     font-size: 9pt;
+    font-weight: bold;
     border-top: #7F7F7F solid thin;
     vertical-align: top;
     padding-top: 0.3cm;
@@ -548,7 +559,7 @@ body {
     content: string(tr_constitution);
   }
   @top-left {
-    content: string(headertextconstitution);
+    content: string(headertextconstitution, start);
   }
 }
 
@@ -558,7 +569,7 @@ body {
     content: string(tr_constitution);
   }
   @top-right {
-    content: string(headertextconstitution);
+    content: string(headertextconstitution, start);
   }
 }
 
@@ -571,7 +582,7 @@ body {
     content: string(headertextcanontitle);
   }
   @top-left {
-    content: string(tr_canon) " " string(headertextcanonrange);
+    content: string(tr_canon) " " string(headertextcanonnumber, start);
   }
 }
 
@@ -584,7 +595,7 @@ body {
     content: string(headertextcanontitle);
   }
   @top-right {
-    content: string(tr_canon) " " string(headertextcanonrange);
+    content: string(tr_canon) " " string(headertextcanonnumber, start);
   }
 }
 
@@ -596,6 +607,9 @@ body {
   @top-right {
     content: string(headertextrulessubsection);
   }
+  @top-left {
+    content: string(tr_section) " " string(headertextrulesrange, start);
+  }
 }
 
 @page rules_of_order:right {
@@ -605,6 +619,9 @@ body {
   }
   @top-left {
     content: string(headertextrulessubsection);
+  }
+  @top-right {
+    content: string(tr_section) " " string(headertextrulesrange, start);
   }
 }
 
