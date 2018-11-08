@@ -329,8 +329,13 @@ ol.decimal.parentheses > li:before {
   content: "(" counter(item, decimal) ") ";
 }
 
-ol.lower-alpha.parentheses > li:before {
+ol.lower-alpha.parentheses > li:before,
+ol.lower-alpha-bold.parentheses > li:before {
   content: "(" counter(item, lower-alpha) ") ";
+}
+
+ol.lower-alpha-bold.parentheses > li:before {
+  font-weight: bold;
 }
 
 ol.lower-roman.parentheses > li:before {
