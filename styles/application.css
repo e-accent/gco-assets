@@ -649,13 +649,13 @@ body {
 }
 
 @page index:left {
-  @bottom-right {
+  @top-left {
     content: string(tr_index);
   }
 }
 
 @page index:right {
-  @bottom-left {
+  @top-right {
     content: string(tr_index);
   }
 }
