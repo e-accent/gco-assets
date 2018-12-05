@@ -350,6 +350,7 @@ ol.upper-roman.parentheses > li:before {
   content: "(" counter(item, upper-roman) ") ";
 }
 
+
 /* --------------------------------------------------
   SIDEBAR TEXT
 -------------------------------------------------- */
@@ -363,6 +364,45 @@ ol.upper-roman.parentheses > li:before {
   width: 0.85in;
   font-size: 8pt;
 }
+
+
+/* --------------------------------------------------
+   HANDWRITING UNDERLINES 
+-------------------------------------------------- */
+
+.handwriting {
+  border-bottom: 0.5pt solid black;
+  display: inline-block;
+  width: 1.5in;
+}
+
+.short {
+  width: 0.8in;
+}
+
+table.handwriting-line {
+  width: 100%;
+  margin: 10pt 0;
+  font-size: 9pt;
+  table-layout: auto;
+}
+
+table.handwriting-line tr {
+  border: none;
+}
+
+table.handwriting-line th {
+  text-align: left;
+  width: 0%;
+  border: none;
+}
+
+table.handwriting-line td {
+  width: 100%;
+  border: none;
+  border-bottom: 0.5pt solid black;
+}
+
 
 /* --------------------------------------------------
   INDEX
