@@ -208,7 +208,6 @@ section.contents {
 
 section.constitution {
   page: constitution;
-  counter-reset: page 1;
 }
 
 section.canons {
@@ -534,7 +533,6 @@ body {
   @bottom-right {
     text-transform: uppercase;
     font-size: 9pt;
-    content: counter(page);
     border-top: #7F7F7F solid thin;
     vertical-align: top;
     padding-top: 0.3cm;
@@ -561,7 +559,6 @@ body {
   @bottom-left {
     text-transform: uppercase;
     font-size: 9pt;
-    content: counter(page);
     border-top: #7F7F7F solid thin;
     vertical-align: top;
     padding-top: 0.3cm;
@@ -584,17 +581,17 @@ body {
   @bottom-right {
     content: string(tr_contents);
   }
-  @bottom-left {
-    content: counter(page, upper-roman);
+}
+
+@page contents {
+  @top-left {
+    content: " "; /* So the border is still created in the header */
   }
 }
 
 @page contents:right {
   @bottom-left {
     content: string(tr_contents);
-  }
-  @bottom-right {
-    content: counter(page, upper-roman);
   }
 }
 
