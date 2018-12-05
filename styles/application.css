@@ -543,6 +543,12 @@ body {
   }
 }
 
+@page contents {
+  @top-left {
+    content: " "; /* So the border is still created in the header */
+  }
+}
+
 @page contents:right {
   @bottom-left {
     content: string(tr_contents);
