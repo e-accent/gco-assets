@@ -123,32 +123,37 @@ section.title,
 section.intro,
 section.copyright {
   text-align: center;
+  page-break-before: always;
+  position: relative;
 }
 
-.title {
-  padding-top: 2.7in;
+section.title {
+  top: 2.7in;
 }
 
-.intro {
-  padding-top: 1.5in;
+section.intro {
+  top: 1.5in;
 }
 
-.intro h3,
-.intro h4 {
+section.copyright {
+  top: 6in;
+}
+
+section.blank-page {
+  page-break-before: always;
+}
+
+section.intro h3,
+section.intro h4 {
   font-weight: normal;
 }
 
-.intro h4 {
+section.intro h4 {
   line-height: 1.4;
 }
 
-.copyright {
-  padding-top: 6in;
-  padding-bottom: 0;
-}
-
-.title img,
-.intro img {
+section.title img,
+section.intro img {
   width: 2in;
   padding: 0.5in;
 }
@@ -199,7 +204,7 @@ section.index article header {
 section.title,
 section.intro,
 section.copyright {
-  page: nonumbering;
+  page: frontmatter;
 }
 
 section.contents {
@@ -573,8 +578,9 @@ body {
   }
 }
 
-@page nonumbering {
-  margin: -3cm 0;
+@page frontmatter {
+  margin: 0;
+  padding: 0;
 }
 
 @page contents:left {
