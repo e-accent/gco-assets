@@ -676,6 +676,7 @@ body {
 @page resolutions-amending:left {
   @top-left {
     content: string(tr_resolutions_amending);
+    font-size: 8.8pt;
   }
   @bottom-right {
     content: string(tr_index);
@@ -685,6 +686,7 @@ body {
 @page resolutions-amending:right {
   @top-right {
     content: string(tr_resolutions_amending);
+    font-size: 8.8pt;
   }
   @bottom-left {
     content: string(tr_index);
