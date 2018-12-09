@@ -505,7 +505,7 @@ body {
 @page {
   size: 6in 9in;
   margin-outside: 0.4in;
-  margin-inside: 0.6in;
+  margin-inside: 0.625in;
   margin-top: 0.6in;
   margin-bottom: 0.6in;
 }
