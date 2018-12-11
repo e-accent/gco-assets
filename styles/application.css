@@ -158,6 +158,10 @@ section.intro img {
   padding: 0.5in;
 }
 
+section.contents h2 {
+  padding-top: 24pt;
+}
+
 a {
   color: black;
   text-decoration: none;
