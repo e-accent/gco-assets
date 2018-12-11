@@ -255,6 +255,15 @@ li {
   padding-left: 0;
 }
 
+.contents ol {
+  padding-left: 2rem;
+}
+
+.contents ol.no-numbering {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .contents ol li {
   margin-bottom: 3pt;
 }
