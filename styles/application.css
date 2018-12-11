@@ -18,7 +18,7 @@ th {
 section {
   margin: 0;
   padding: 0;
-  page-break-before: right;
+  page-break-before: always;
   display: block;
 }
 
@@ -158,6 +158,10 @@ section.intro img {
   padding: 0.5in;
 }
 
+section.contents h2 {
+  padding-top: 24pt;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -248,6 +252,15 @@ ol ol {
 }
 
 li {
+  padding-left: 0;
+}
+
+.contents ol {
+  padding-left: 2rem;
+}
+
+.contents ol.no-numbering {
+  margin-left: 0;
   padding-left: 0;
 }
 
