@@ -736,6 +736,15 @@ body {
   .rules-of-order {
     padding-right: 13rem !important;
   }
+  section.title,
+  section.intro,
+  section.copyright {
+    padding-top: 0;
+    top: 0;
+  }
+  section.blank-page {
+    display: none;
+  }
   .title,
   .intro,
   .copyright {
