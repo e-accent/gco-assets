@@ -727,7 +727,7 @@ body {
   .canons ol dfn,
   .rules_of_order ol dfn {
     position: absolute;
-    right: 1.4cm;
+    right: 0.5in;
     width: 1.3in;
   }
   body {
@@ -743,11 +743,21 @@ body {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
     display: block;
     clear: both;
+    position: relative;
   }
   .constitution,
   .canons,
-  .rules-of-order {
+  .rules_of_order {
     padding-right: 13rem !important;
+  }
+  section.title,
+  section.intro,
+  section.copyright {
+    padding-top: 0;
+    top: 0;
+  }
+  section.blank-page {
+    display: none;
   }
   .title,
   .intro,
