@@ -744,6 +744,7 @@ body {
     display: block;
     clear: both;
     position: relative;
+    background: white !important;
   }
   .constitution,
   .canons,
@@ -770,5 +771,44 @@ body {
   a:hover {
     color: blue;
     text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  body {
+    width: 70%;
+    background: #f8f8f8 !important;
+    float: left;
+    margin: 0 0 0 30%;
+    padding: 0 1rem;
+  }
+  section.contents {
+    position: fixed;
+    margin: 0 !important;
+    padding: 1rem !important;
+    background: white;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 100vh;
+    overflow-y: auto;
+    border: none;
+    box-shadow: none !important;
+  }
+  section.contents h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  section.contents nav:last-of-type {
+    margin-bottom: 2rem;
+  }
+  section.contents a {
+    color: #3e8ede;
+  }
+  section.contents a:hover {
+    color: #3e8ede;
   }
 }
