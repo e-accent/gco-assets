@@ -1,3 +1,4 @@
-body {
-    background-color: green;
+@page {
+  margin-outside: 0.4in;
+  margin-inside: 0.4in;
 }
