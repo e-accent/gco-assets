@@ -1,4 +1,10 @@
+/* 
+  The margins need to equal the same as the sum 
+  of the left and right margins in the printed version 
+  so the page count matches.
+*/
+
 @page {
-  margin-outside: 0.4in;
-  margin-inside: 0.4in;
+  margin-outside: 0.5125in;
+  margin-inside: 0.5125in;
 }
