@@ -275,6 +275,21 @@ li {
   padding-left: 0;
 }
 
+.hardcoded-numbering {
+  list-style-type: none;
+  margin-left: 1.75rem; /*check this*/
+  padding-left: 0;
+}
+.hardcoded-numbering>li span.number {
+  position: absolute;
+  left: .48in;
+  text-align: right;
+  width: .25in;
+}
+.hardcoded-numbering-bold>li span.number {
+  font-weight: bold;
+}
+
 ol.decimal {
   list-style-type: decimal;
 }
