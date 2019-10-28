@@ -121,6 +121,13 @@ hr {
 }
 
 /* Utilities */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .gco-blue {
   color: #3e8ede !important;
 }
