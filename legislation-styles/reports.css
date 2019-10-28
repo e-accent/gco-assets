@@ -21,7 +21,7 @@
 .report__logo-wrapper img {
   width: 5rem;
   position: relative;
-  top: 1rem;
+  top: 0.8rem;
   margin-right: 1rem;
 }
 
@@ -39,7 +39,6 @@
 .report__meta {
   float: right;
   display: block;
-  margin-top: 5.2em;
   text-align: right;
   font-size: 8pt;
   width: 50%;
@@ -103,6 +102,10 @@ tbody tr td {
 
 th, td, p, li, dt, dd {
   font-size: 9pt;
+}
+
+p, li {
+  line-height: 1.6;;
 }
 
 a {
