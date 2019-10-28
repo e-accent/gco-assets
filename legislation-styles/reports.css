@@ -1,0 +1,186 @@
+.report__header {
+  display: block;
+  overflow: auto;
+  padding-top: 1rem;
+  border-bottom: 1px solid #D2D2D2;
+  line-height: 1.4;
+}
+
+.report__logo-wrapper,
+.report__name-wrapper {
+  float: left;
+  display: block;
+}
+
+.report__logo-wrapper {
+  margin-right: 1rem;
+  position: relative;
+  top: 0.8rem;
+}
+
+.report__logo-wrapper img {
+  width: 3.6rem;
+}
+
+.report__church-name {
+  font-size: 9pt;
+  margin-bottom: 0;
+}
+
+.report__division {
+  font-size: 8.5pt;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.report__meta {
+  float: right;
+  display: block;
+  margin-top: 5.2em;
+  text-align: right;
+  font-size: 8pt;
+  width: 50%;
+}
+
+.report {
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 18pt;
+  padding-top: 1rem;
+}
+
+h2 {
+  font-size: 13pt;
+  padding-top: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  background: #EAEAEA;
+  vertical-align: bottom;
+}
+
+th.text--right,
+th.number {
+  text-align: right;
+}
+
+tbody th {
+  vertical-align: top;
+}
+
+th, td {
+  padding: 0.3rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+tbody tr {
+  border-bottom: 1px solid #E3E3E3;
+}
+
+tbody tr:first-of-type {
+  border-top: 1px solid #E3E3E3;
+}
+
+tbody tr td {
+  outline: none;
+  margin: 0;
+  vertical-align: top;
+}
+
+th, td, p, li, dt, dd {
+  font-size: 9pt;
+}
+
+a {
+  color: #3e8ede;
+  text-decoration: none;
+}
+
+ol {
+  margin: 0 0 0 1.5rem;
+  padding: 0;
+}
+
+/* Utilities */
+.gco-blue {
+  color: #3e8ede !important;
+}
+
+.bg-grey-light {
+  background: #F6F6F6 !important;
+}
+
+.bg-grey-medium-light {
+  background: #E4E4E4 !important;
+}
+
+tr {
+  page-break-inside: avoid;
+}
+
+div.alwaysbreak {
+  page-break-before: always;
+}
+
+div.nobreak:before {
+  clear:both;
+}
+
+div.nobreak {
+  page-break-inside: avoid;
+}
+
+.fifty-percent {
+  width: 50%;
+}
+
+/* Alignment classes */
+
+.text--left {
+  text-align: left;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.text--right {
+  text-align: right;
+}
+
+/* Table with fixed width first column */
+
+.table--fixed-first-column tr th:first-child,
+.table--fixed-first-column tr td:first-child  {
+  width: 1%;
+  white-space: nowrap;
+}
+
+/* Columns */
+/* Multi-column layouts (with each column being the same width): */
+
+.column__wrapper {
+  display: flex;
+}
+
+.column {
+  margin-bottom: 1.5rem;
+  flex: 1 0 0%;
+  margin-right: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.column:last-of-type {
+  margin-right: 0;
+  padding-right: 0;
+}
