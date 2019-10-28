@@ -44,6 +44,10 @@
   font-family: Helvetica, sans-serif;
 }
 
+.report__sign-line {
+  margin-top: 3rem;
+}
+
 h1 {
   font-size: 18pt;
   padding-top: 1rem;
