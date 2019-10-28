@@ -2,8 +2,8 @@
   display: block;
   line-height: 1.4;
   border-bottom: 1px solid #D2D2D2;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .report__logo-wrapper,
@@ -104,6 +104,12 @@ th, td, p, li, dt, dd {
 
 p, li {
   line-height: 1.6;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 a {
