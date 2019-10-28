@@ -19,13 +19,13 @@
 .report__logo-wrapper img {
   width: 5rem;
   position: relative;
-  top: 0.5rem;
+  top: -0.3rem;
   margin-right: 1rem;
 }
 
 .report__church-name {
   font-size: 9pt;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
 .report__division {
