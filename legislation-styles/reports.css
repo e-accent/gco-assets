@@ -1,10 +1,9 @@
 .report__header {
   display: block;
-  overflow: auto;
-  padding-top: 1rem;
-  border-bottom: 1px solid #D2D2D2;
   line-height: 1.4;
-  margin-bottom: 2rem;
+  border-bottom: 1px solid #D2D2D2;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .report__logo-wrapper,
@@ -21,6 +20,9 @@
 
 .report__logo-wrapper img {
   width: 5rem;
+  position: relative;
+  top: 1rem;
+  margin-right: 1rem;
 }
 
 .report__church-name {
