@@ -14,14 +14,12 @@
 
 .report__logo-wrapper {
   margin-right: 1rem;
-  position: relative;
-  top: 0.8rem;
 }
 
 .report__logo-wrapper img {
   width: 5rem;
   position: relative;
-  top: 0.8rem;
+  top: 0.5rem;
   margin-right: 1rem;
 }
 
@@ -105,7 +103,7 @@ th, td, p, li, dt, dd {
 }
 
 p, li {
-  line-height: 1.6;;
+  line-height: 1.6;
 }
 
 a {
