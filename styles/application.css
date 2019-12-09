@@ -512,6 +512,7 @@ section.rules_of_order h3[data-section] {
 -------------------------------------------------- */
 
 body {
+  orphans: 3;
   padding: 12pt 0;
 }
 
