@@ -240,131 +240,58 @@ section.index {
 -------------------------------------------------- */
 
 ol {
-  margin-left: 1.5rem;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-ol ol {
-  padding-left: 1rem;
+  margin: 0;
+  padding: 0;
+  display: table;
+  border-collapse: collapse;
+  list-style: none;
 }
 
 li {
   padding-left: 0;
+  display: table-row;
 }
 
-.contents ol {
-  padding-left: 2rem;
+.decimal-parentheses-bullet-prefix,
+.decimal-no-parentheses-bullet-prefix,
+.lower-alpha-bold-parentheses-bullet-prefix,
+.lower-alpha-bold-no-parentheses-bullet-prefix,
+.lower-alpha-parentheses-bullet-prefix,
+.lower-alpha-no-parentheses-bullet-prefix,
+.upper-alpha-parentheses-bullet-prefix,
+.upper-alpha-no-parentheses-bullet-prefix,
+.roman-lower-no-parentheses-bullet-prefix,
+.roman-lower-parentheses-bullet-prefix,
+.roman-upper-no-parentheses-bullet-prefix,
+.roman-upper-parentheses-bullet-prefix {
+  display: table-cell;
+  padding-right: 0.5rem;
+  width: 1rem;
 }
 
-.contents ol.no-numbering {
-  margin-left: 0;
-  padding-left: 0;
+ol ol .decimal-parentheses-bullet-prefix,
+ol ol .decimal-no-parentheses-bullet-prefix,
+ol ol .lower-alpha-bold-parentheses-bullet-prefix,
+ol ol .lower-alpha-bold-no-parentheses-bullet-prefix,
+ol ol .lower-alpha-parentheses-bullet-prefix,
+ol ol .lower-alpha-no-parentheses-bullet-prefix,
+ol ol .upper-alpha-parentheses-bullet-prefix,
+ol ol .upper-alpha-no-parentheses-bullet-prefix,
+ol ol .roman-lower-no-parentheses-bullet-prefix,
+ol ol .roman-lower-parentheses-bullet-prefix,
+ol ol .roman-upper-no-parentheses-bullet-prefix,
+ol ol .roman-upper-parentheses-bullet-prefix {
+  text-align: right;
+}
+
+.lower-alpha-bold-parentheses-bullet-prefix,
+.lower-alpha-bold-no-parentheses-bullet-prefix,
+ol.sec-list > li p span.number {
+  font-weight: bold;
 }
 
 .contents ol li {
   margin-bottom: 3pt;
-}
-
-.no-numbering,
-.sec-list {
-  list-style-type: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-ol.decimal {
-  list-style-type: decimal;
-}
-
-ol.lower-alpha {
-  list-style-type: lower-alpha;
-}
-
-ol.lower-alpha-bold {
-  list-style-type: lower-alpha;
-}
-
-ol.lower-roman {
-  list-style-type: lower-roman;
-}
-
-ol.upper-alpha {
-  list-style-type: upper-alpha;
-}
-
-ol.upper-roman {
-  list-style-type: upper-roman;
-}
-
-ol.lower-alpha>li span.number,
-ol.upper-alpha>li span.number,
-ol.lower-roman>li span.number,
-ol.upper-roman>li span.number,
-ol.decimal>li span.number {
-  position: absolute;
-  left: -1cm;
-  top: 0;
-  display: block;
-  width: 1cm;
-  font-weight: normal;
-}
-
-ol.sec-list>li p span.number {
-  display: inline-block;
-  font-weight: bold;
-}
-
-/* --------------------------------------------------
-  LISTS WITH PARENTHESES AS SEPARATOR
--------------------------------------------------- */
-
-ol.parentheses {
-  counter-reset: item;
-  margin-left: 0;
-  display: table;
-  border-collapse: collapse;
-}
-
-ol.parentheses > li {
-  counter-increment: item; 
-  list-style: none;
-  display: table-row;
-  border-bottom: 8pt solid transparent;
-}
-
-ol.parentheses > li:before {
-  content: "(" counter(item, decimal) ") "; 
-  display: table-cell;
-  padding-right: 0.5rem;
-  text-align: right;
-}
-
-ol.decimal.parentheses > li:before {
-  content: "(" counter(item, decimal) ") ";
-}
-
-ol.lower-alpha.parentheses > li:before,
-ol.lower-alpha-bold.parentheses > li:before {
-  content: "(" counter(item, lower-alpha) ") ";
-}
-
-ol.lower-alpha-bold.parentheses > li:before {
-  font-weight: bold;
-}
-
-ol.lower-roman.parentheses > li:before {
-  content: "(" counter(item, lower-roman) ") ";
-}
-
-ol.upper-alpha.parentheses > li:before {
-  content: "(" counter(item, upper-alpha) ") ";
-}
-
-ol.upper-roman.parentheses > li:before {
-  content: "(" counter(item, upper-roman) ") ";
 }
 
 
