@@ -253,14 +253,12 @@ li {
 }
 
 /* Complete list of classes:
-
 .upper-roman-bullet-prefix,
 .lower-roman-bullet-prefix,
 .upper-alpha-bullet-prefix,
 .lower-alpha-bullet-prefix,
 .lower-alpha-bold-bullet-prefix,
 .decimal-bullet-prefix
-
 */
 
 .list-number {
@@ -273,8 +271,6 @@ ol ol .list-number {
   text-align: right;
 }
 
-.lower-alpha-bold-parentheses-bullet-prefix,
-.lower-alpha-bold-no-parentheses-bullet-prefix,
 ol.sec-list > li p span.number {
   font-weight: bold;
 }
