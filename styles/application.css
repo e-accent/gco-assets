@@ -252,35 +252,24 @@ li {
   display: table-row;
 }
 
-.decimal-parentheses-bullet-prefix,
-.decimal-no-parentheses-bullet-prefix,
-.lower-alpha-bold-parentheses-bullet-prefix,
-.lower-alpha-bold-no-parentheses-bullet-prefix,
-.lower-alpha-parentheses-bullet-prefix,
-.lower-alpha-no-parentheses-bullet-prefix,
-.upper-alpha-parentheses-bullet-prefix,
-.upper-alpha-no-parentheses-bullet-prefix,
-.roman-lower-no-parentheses-bullet-prefix,
-.roman-lower-parentheses-bullet-prefix,
-.roman-upper-no-parentheses-bullet-prefix,
-.roman-upper-parentheses-bullet-prefix {
+/* Complete list of classes:
+
+.upper-roman-bullet-prefix,
+.lower-roman-bullet-prefix,
+.upper-alpha-bullet-prefix,
+.lower-alpha-bullet-prefix,
+.lower-alpha-bold-bullet-prefix,
+.decimal-bullet-prefix
+
+*/
+
+.list-number {
   display: table-cell;
   padding-right: 0.5rem;
   width: 1rem;
 }
 
-ol ol .decimal-parentheses-bullet-prefix,
-ol ol .decimal-no-parentheses-bullet-prefix,
-ol ol .lower-alpha-bold-parentheses-bullet-prefix,
-ol ol .lower-alpha-bold-no-parentheses-bullet-prefix,
-ol ol .lower-alpha-parentheses-bullet-prefix,
-ol ol .lower-alpha-no-parentheses-bullet-prefix,
-ol ol .upper-alpha-parentheses-bullet-prefix,
-ol ol .upper-alpha-no-parentheses-bullet-prefix,
-ol ol .roman-lower-no-parentheses-bullet-prefix,
-ol ol .roman-lower-parentheses-bullet-prefix,
-ol ol .roman-upper-no-parentheses-bullet-prefix,
-ol ol .roman-upper-parentheses-bullet-prefix {
+ol ol .list-number {
   text-align: right;
 }
 
