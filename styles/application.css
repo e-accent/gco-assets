@@ -273,8 +273,16 @@ li {
 .list-number {
   display: table-cell;
   padding-right: 0.5rem;
-  width: 1rem;
+  text-align: right;
+  min-width: 1rem;
 }
+.list-number.lower-roman-bullet-prefix {
+  min-width: 1.5rem;
+}
+.list-number.upper-roman-bullet-prefix {
+  min-width: 2.5rem;
+}
+
 
 ol ol .list-number {
   text-align: right;
