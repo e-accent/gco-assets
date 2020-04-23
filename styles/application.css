@@ -274,13 +274,13 @@ li {
   display: table-cell;
   padding-right: 0.5rem;
   text-align: right;
-  min-width: 1rem;
+  width: 1rem;
 }
 .list-number.lower-roman-bullet-prefix {
-  min-width: 1.5rem;
+  width: 1.5rem;
 }
 .list-number.upper-roman-bullet-prefix {
-  min-width: 2.5rem;
+  width: 2.5rem;
 }
 
 
