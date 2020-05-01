@@ -250,15 +250,25 @@ section.index {
 
 ol {
   margin: 0;
+  margin-left: 2rem;
   padding: 0;
-  display: table;
+  display: block;
   border-collapse: collapse;
   list-style: none;
 }
+ol.sec-list, ol.no-numbering {
+  margin-left: 0;
+}
+ol.lower-roman {
+  margin-left: 2.5rem;
+}
+ol.upper-roman {
+  margin-left: 3rem;
+}
 
 li {
-  padding-left: 0;
-  display: table-row;
+  display: block;
+  margin: 8pt 0pt;
 }
 
 /* Complete list of classes:
@@ -271,22 +281,25 @@ li {
 */
 
 .list-number {
-  display: table-cell;
-  padding-right: 0.5rem;
+  float: left;
+  margin-left: -2.5rem;
   text-align: right;
-  width: 1rem;
+  width: 2rem;
 }
-.list-number.lower-roman-bullet-prefix {
-  width: 1.5rem;
-}
-.list-number.upper-roman-bullet-prefix {
+ol.lower-roman > li .list-number {
+  margin-left: -3rem;
   width: 2.5rem;
+}
+ol.upper-roman > li .list-number {
+  margin-left: -4rem;
+  width: 3.5rem;
 }
 
 
 ol ol .list-number {
   text-align: right;
 }
+
 
 ol.sec-list > li p span.number {
   font-weight: bold;
@@ -306,7 +319,7 @@ ol.sec-list > li p span.number {
 .rules_of_order ol dfn {
   position: absolute;
   right: -1in;
-  margin-top: 0.06cm;
+  margin-top: 1.25pt; /* vertically align the first baseline with the main text */
   width: 0.85in;
   font-size: 8pt;
 }
