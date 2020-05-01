@@ -161,6 +161,12 @@ section.intro img {
 section.contents h2 {
   padding-top: 24pt;
 }
+section.contents h4 {
+  padding: 6pt 0;
+}
+section.contents li {
+  margin: 0;
+}
 
 a {
   color: black;
@@ -296,17 +302,8 @@ ol.upper-roman > li .list-number {
 }
 
 
-ol ol .list-number {
-  text-align: right;
-}
-
-
 ol.sec-list > li p span.number {
   font-weight: bold;
-}
-
-.contents ol li {
-  margin-bottom: 3pt;
 }
 
 
@@ -317,9 +314,9 @@ ol.sec-list > li p span.number {
 .constitution ol dfn,
 .canons ol dfn,
 .rules_of_order ol dfn {
+  margin-top: 1.1pt;
   position: absolute;
   right: -1in;
-  margin-top: 1.25pt; /* vertically align the first baseline with the main text */
   width: 0.85in;
   font-size: 8pt;
 }
