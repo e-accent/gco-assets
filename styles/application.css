@@ -2,16 +2,15 @@
   GENERAL STYLES
 -------------------------------------------------- */
 
-body {
+html {
+  font-size: 9pt; /* rems depend on this setting */
   line-height: 1.5;
-  box-sizing: border-box;
-  font-variant-ligatures: common-ligatures;
 }
 
-body,
-td,
-th {
+body {
   font-family: Merriweather, serif;
+  box-sizing: border-box;
+  font-variant-ligatures: common-ligatures;
   color: #000000;
 }
 
@@ -43,7 +42,8 @@ h6 {
 
 h1+p,
 h2+p,
-h3+p {
+h3+p,
+h4+ol {
   page-break-before: avoid;
 }
 
@@ -160,6 +160,12 @@ section.intro img {
 
 section.contents h2 {
   padding-top: 24pt;
+}
+section.contents h4 {
+  padding: 6pt 0;
+}
+section.contents li {
+  margin: 0;
 }
 
 a {
@@ -294,19 +300,8 @@ ol.upper-roman > li .list-number {
   margin-left: -4rem;
   width: 3.5rem;
 }
-
-
-ol ol .list-number {
-  text-align: right;
-}
-
-
 ol.sec-list > li p span.number {
   font-weight: bold;
-}
-
-.contents ol li {
-  margin: 3pt 0;
 }
 
 
@@ -317,6 +312,7 @@ ol.sec-list > li p span.number {
 .constitution ol dfn,
 .canons ol dfn,
 .rules_of_order ol dfn {
+  margin-top: 1.1pt;
   position: absolute;
   right: -1in;
   width: 0.85in;
@@ -690,7 +686,7 @@ body {
   .constitution,
   .canons,
   .rules_of_order {
-    padding-right: 13rem !important;
+    padding-right: 2.2in !important;
   }
   section.title,
   section.intro,
